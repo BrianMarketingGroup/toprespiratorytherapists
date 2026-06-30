@@ -14,7 +14,7 @@ export const metadata = {
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
     <p className="inline-flex items-center gap-2.5 text-[11px] font-semibold tracking-[0.3em] uppercase text-teal-light mb-5">
-      <span className="h-1.5 w-1.5 rotate-45 bg-teal-light shadow-[0_0_8px_2px_rgba(95,244,232,0.6)]" />
+      <span className="h-1.5 w-1.5 rotate-45 bg-teal-light shadow-[0_0_8px_2px_rgba(56,189,248,0.6)]" />
       {children}
     </p>
   );

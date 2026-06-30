@@ -1,14 +1,13 @@
 import { ArrowRight, Phone } from "lucide-react";
 import Button from "./Button";
 import Container from "./Container";
-import Swell from "./Swell";
 import FadeIn from "./FadeIn";
 import { siteConfig } from "@/site.config";
 
 export default function FinalCta() {
   return (
     <section className="relative overflow-hidden bg-navy-dark py-24 lg:py-32">
-      {/* warm dusk horizon glow base */}
+      {/* ambient glow base */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -17,11 +16,8 @@ export default function FinalCta() {
         }}
         aria-hidden
       />
-      {/* faint caustic light over the deep */}
+      {/* faint ambient light overlay */}
       <div className="absolute inset-0 caustics opacity-50 pointer-events-none" aria-hidden />
-
-      {/* reprise of the hero water — the page closes underwater-at-dusk */}
-      <Swell className="h-40 opacity-80" />
 
       <Container>
         <div className="relative text-center max-w-3xl mx-auto">

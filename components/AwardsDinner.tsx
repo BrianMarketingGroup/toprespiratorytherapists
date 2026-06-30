@@ -16,7 +16,7 @@ export default function AwardsDinner() {
         <FadeIn variant="luxe">
           <div className="text-center mb-14 lg:mb-16">
             <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-light mb-5">
-              Recognition · Reserved for the Listed
+              Recognition Awards · 2027
             </p>
             <div className="flex items-center justify-center gap-3 sm:gap-5 lg:gap-8">
               <LaurelLeft className="h-20 w-9 sm:h-28 sm:w-12 lg:h-36 lg:w-16 text-gold-light/50 flex-shrink-0" />
@@ -35,21 +35,21 @@ export default function AwardsDinner() {
           <FadeIn variant="luxe">
             <div className="flex justify-center">
               <div className="relative w-full max-w-md">
-                <div className="absolute -inset-6 bg-gold/[0.08] rounded-full blur-3xl pointer-events-none" />
-                <div className="relative rounded-2xl overflow-hidden border border-gold/25 shadow-2xl shadow-black/50">
+                <div className="absolute -inset-6 bg-gold/[0.12] rounded-full blur-3xl pointer-events-none" />
+                <div className="relative rounded-2xl overflow-hidden border border-gold/30 shadow-2xl shadow-black/60">
                   <Image
                     src="/award-plaque.png"
-                    alt={`${siteConfig.name} recognition award`}
-                    width={1416}
-                    height={1111}
+                    alt="Top Respiratory Therapists Recognition Award 2027"
+                    width={1232}
+                    height={923}
                     sizes="(min-width: 1024px) 28rem, 100vw"
                     className="w-full h-auto"
                     priority
                   />
                 </div>
-                {/* engraved-plate caption */}
-                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 z-20 inline-flex items-center gap-2 justify-center px-4 py-1.5 border border-gold/30 bg-navy-dark/85 backdrop-blur text-gold-light text-[10px] font-semibold tracking-[0.25em] uppercase rounded-full whitespace-nowrap">
-                  August 2026 Launch
+                {/* caption badge */}
+                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 z-20 inline-flex items-center gap-2 justify-center px-4 py-1.5 border border-gold/40 bg-navy-dark/90 backdrop-blur text-gold-light text-[10px] font-semibold tracking-[0.25em] uppercase rounded-full whitespace-nowrap shadow-lg shadow-black/40">
+                  Recognition Awards · 2027
                 </div>
               </div>
             </div>
@@ -57,10 +57,10 @@ export default function AwardsDinner() {
 
           {/* Right: details */}
           <FadeIn variant="luxe" delay={0.15}>
-            <p className="text-muted text-lg leading-relaxed mb-8">
-              Every practice listed on {siteConfig.name} receives a custom
-              recognition award — a tangible signal of trust to every patient and referring physician who finds you.
-              Display it in your clinic, waiting room, or office, where patients decide
+            <p className="text-pearl/75 text-lg leading-relaxed mb-8">
+              Every practice listed on {siteConfig.name} receives a custom crystal
+              recognition award — a tangible mark of distinction to display in your clinic,
+              waiting room, or office, where patients and referring physicians decide
               who will guide their respiratory care.
             </p>
 
@@ -68,22 +68,22 @@ export default function AwardsDinner() {
               {[
                 {
                   icon: Award,
-                  text: "A complimentary custom recognition award, engraved for your respiratory practice",
+                  text: "Custom crystal recognition award, engraved with your practice name and city",
                 },
                 {
                   icon: Heart,
-                  text: "Built to display in your clinic, waiting room, or office — where patient trust is earned",
+                  text: "Display in your clinic or waiting room — where patient trust is built every day",
                 },
                 {
                   icon: MapPin,
-                  text: "Marks you as a recognized practice in your city — only one Featured listing per city",
+                  text: "Recognizes you as a Top Respiratory Therapist in your city — only one Featured per city",
                 },
               ].map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-start gap-3">
                   <div className="flex-shrink-0 h-8 w-8 rounded-full bg-gold/15 border border-gold/30 flex items-center justify-center mt-0.5">
                     <Icon className="h-4 w-4 text-gold-light" />
                   </div>
-                  <p className="text-pearl/85 text-sm leading-relaxed">{text}</p>
+                  <p className="text-pearl/80 text-sm leading-relaxed">{text}</p>
                 </div>
               ))}
             </div>
@@ -94,7 +94,7 @@ export default function AwardsDinner() {
               </Button>
               <a
                 href={siteConfig.phoneHref}
-                className="inline-flex items-center gap-2.5 rounded-lg border border-border bg-white/5 px-5 py-3 text-sm font-semibold text-pearl/80 hover:text-gold-light hover:border-gold/50 hover:bg-gold/10 transition-colors"
+                className="inline-flex items-center gap-2.5 rounded-lg border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-pearl/80 hover:text-gold-light hover:border-gold/50 hover:bg-gold/10 transition-colors"
               >
                 <BookOpen className="h-4 w-4 text-gold-light" />
                 {siteConfig.phone}

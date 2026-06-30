@@ -12,7 +12,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 glass border-b border-gold/15 bg-navy-dark/70 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-navy-dark backdrop-blur-xl">
       <Container>
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -65,7 +65,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-gold/15 bg-navy-dark/95 backdrop-blur-xl">
+        <div className="md:hidden border-t border-white/10 bg-navy-dark backdrop-blur-xl">
           <Container>
             <nav className="py-4 flex flex-col gap-3" aria-label="Mobile navigation">
               {siteConfig.nav.map((link) => (

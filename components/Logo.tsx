@@ -6,7 +6,7 @@ interface LogoProps {
   className?: string;
 }
 
-/** Brand lockup — the gilded marine mark + the stacked wordmark.
+/** Brand lockup — the respiratory waveform mark + the stacked wordmark.
  *  Mark glints in gold (precious light); wordmark sits in pearl. */
 export default function Logo({ variant = "onDark", className = "" }: LogoProps) {
   return (

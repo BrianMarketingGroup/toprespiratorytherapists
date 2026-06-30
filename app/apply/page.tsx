@@ -29,7 +29,7 @@ export default function ApplyPage() {
       {/* Dark header */}
       <section className="bg-navy-dark text-pearl pt-8 pb-0 sm:py-14 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none"
-          style={{ backgroundImage: "radial-gradient(circle at 70% 50%, #1FC8C0 0%, transparent 60%)" }}
+          style={{ backgroundImage: "radial-gradient(circle at 70% 50%, #0ea5e9 0%, transparent 60%)" }}
         />
         <Container className="relative text-center">
           <h1 className="race-head text-3xl sm:text-4xl lg:text-5xl font-light mb-4 text-pearl">

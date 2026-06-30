@@ -23,8 +23,8 @@ export const siteConfig = {
     "Get an enhanced listing on TopRespiratoryTherapists.com — help patients and referring physicians find your respiratory care practice when they're searching for pulmonary rehabilitation, COPD management, ventilator support, and home respiratory services.",
 
   // Contact
-  phone: "(866) 520-7611",
-  phoneHref: "tel:+18665207611",
+  phone: "(866) 780-9092",
+  phoneHref: "tel:+18667809092",
   salesEmail: "info@toprespiratorytherapists.com",
 
   // Analytics

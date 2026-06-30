@@ -1,11 +1,7 @@
 /**
- * Laurel wreath for the TopBoatCharters.com recognition mark.
- * Render in gold hairlines (text-gold / text-gold-light) on near-black to frame
- * the engraved recognition emblem for the dock, marina office, or booking desk.
+ * Laurel wreath for the TopRespiratoryTherapists.com recognition mark.
+ * Render in gold hairlines (text-gold / text-gold-light) on dark backgrounds.
  * Paths use currentColor so text-* Tailwind classes control the fill color.
- * Original canvas: 1500×1500.
- * Left branch: content in x≈480–825, y≈113–1386 region.
- * Right branch: same paths mirrored, translated to x≈480–1020, y≈113–1386.
  */
 
 function LeftPaths() {

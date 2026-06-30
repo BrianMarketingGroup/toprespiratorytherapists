@@ -2,8 +2,8 @@ import { clsx } from "clsx";
 import { siteConfig } from "@/site.config";
 
 /**
- * Text wordmark — the domain set in the dark luxury style.
- * "TOP BOAT" rides in pearl, "CHARTERS" in pearl with letter-spacing,
+ * Text wordmark — the domain set in the premium clinical style.
+ * "TOP RESPIRATORY" rides in pearl, "THERAPISTS" in pearl with letter-spacing,
  * ".com" a muted gold tld. Size is driven by the parent font-size via
  * `className` (e.g. text-xl).
  */

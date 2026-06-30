@@ -34,7 +34,7 @@ export const previewBusinesses: PreviewBusiness[] = [
     phone: "(713) 555-0142",
     location: "Houston, TX",
     servingArea: "Houston, TX · Texas Medical Center",
-    imageUrl: "https://images.unsplash.com/photo-1584467735871-8e85353a8413?w=400&h=400&fit=crop&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=400&fit=crop&q=80",
     about:
       "a leading respiratory care practice in Houston specializing in pulmonary rehabilitation, COPD management, and chronic lung disease treatment at the Texas Medical Center.",
     team: [

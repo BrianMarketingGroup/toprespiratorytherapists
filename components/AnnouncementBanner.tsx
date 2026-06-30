@@ -16,7 +16,7 @@ const SPECIALTY_TYPES = [
 export default function AnnouncementBanner() {
   return (
     <section className="relative overflow-hidden bg-navy-dark border-y border-gold/25 py-3">
-      {/* faint plankton texture */}
+      {/* faint dot texture */}
       <div className="absolute inset-0 carbon opacity-20" aria-hidden />
 
       <Container>

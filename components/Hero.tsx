@@ -4,10 +4,9 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Button from "./Button";
-import Swell from "./Swell";
 
 const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=1920&q=80";
+  "https://images.unsplash.com/photo-1631563019676-dade0dbdb8fc?auto=format&fit=crop&w=1920&q=80";
 
 const HEADLINE = ["Be", "the", "therapist", "they"];
 const ACCENT = "trust.";
@@ -68,16 +67,16 @@ export default function Hero() {
       ref={sectionRef}
       className="relative flex items-center overflow-hidden bg-navy-dark min-h-[94vh]"
     >
-      {/* 1. Warm dusk-at-depth base gradient */}
+      {/* 1. Deep medical blue base gradient */}
       <div
         className="absolute inset-0 animate-gradient"
         style={{
           backgroundImage:
-            "linear-gradient(180deg, #030B11 0%, #0A1A24 42%, #12313F 66%, rgba(199,125,58,0.18) 86%, rgba(242,213,140,0.10) 100%)",
+            "linear-gradient(180deg, #060d1a 0%, #0f2744 42%, #1e3a5f 66%, rgba(217,119,6,0.15) 86%, rgba(251,191,36,0.08) 100%)",
         }}
       />
 
-      {/* 2. Yacht dissolving into the deep */}
+      {/* 2. Background photo */}
       <Image
         src={HERO_IMAGE}
         alt="Respiratory therapist providing patient care"
@@ -101,7 +100,7 @@ export default function Hero() {
       >
         <div className="caustics absolute inset-0" />
         <div className="film-grain absolute inset-0" />
-        {/* Wake of Gilt — a column of dusk light that follows the cursor */}
+        {/* Cursor light column */}
         <div
           ref={wakeRef}
           className="absolute top-0 bottom-0 w-[24rem]"
@@ -113,7 +112,7 @@ export default function Hero() {
             opacity: 0.35,
           }}
         />
-        {/* Plankton sparks */}
+        {/* Ambient sparks */}
         {SPARKS.map((p, i) => (
           <span
             key={i}
@@ -124,21 +123,14 @@ export default function Hero() {
               width: p.s,
               height: p.s,
               animationDelay: p.d,
-              boxShadow: "0 0 8px 2px rgba(124,249,196,0.8)",
+              boxShadow: "0 0 8px 2px rgba(56,189,248,0.8)",
             }}
           />
         ))}
       </motion.div>
 
-      {/* 4. Parallax swell system anchored to the waterline */}
-      <motion.div
-        className="absolute inset-x-0 bottom-0 h-[42%] pointer-events-none"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.4, delay: 1.2, ease: "easeOut" }}
-      >
-        <Swell className="h-full" />
-      </motion.div>
+      {/* 4. Bottom gradient fade into the stats band */}
+      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-navy pointer-events-none" />
 
       {/* 5. Content */}
       <div className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8">
@@ -150,7 +142,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="inline-flex items-center gap-2.5 text-[11px] font-semibold tracking-[0.3em] uppercase text-teal-light mb-6"
             >
-              <span className="h-1.5 w-1.5 rotate-45 bg-teal-light shadow-[0_0_8px_2px_rgba(95,244,232,0.7)]" />
+              <span className="h-1.5 w-1.5 rotate-45 bg-teal-light shadow-[0_0_8px_2px_rgba(147,197,253,0.7)]" />
               National Respiratory Therapist Directory · August 2026
             </motion.p>
 
