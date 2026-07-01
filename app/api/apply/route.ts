@@ -60,7 +60,11 @@ export async function POST(req: NextRequest) {
     } catch (e) {
       console.error("[bff] contact submission failed:", e);
     }
-    appendContactToSheet(parsed.data, meta).catch((e) => console.error("[sheets] contact write failed:", e));
+    try {
+      await appendContactToSheet(parsed.data, meta);
+    } catch (e) {
+      console.error("[sheets] contact write failed:", e);
+    }
     sendContactEmail(parsed.data, meta).catch((e) => console.error("[email] contact notification failed:", e));
     return NextResponse.json({ ok: true });
   }
@@ -78,7 +82,11 @@ export async function POST(req: NextRequest) {
   } catch (e) {
     console.error("[bff] apply submission failed:", e);
   }
-  appendLeadToSheet(parsed.data, meta).catch((e) => console.error("[sheets] lead write failed:", e));
+  try {
+    await appendLeadToSheet(parsed.data, meta);
+  } catch (e) {
+    console.error("[sheets] lead write failed:", e);
+  }
   sendLeadEmail(parsed.data, meta).catch((e) => console.error("[email] lead notification failed:", e));
   if (parsed.data.featuredLocations.length > 0) clearAvailabilityCache();
   return NextResponse.json({ ok: true });
