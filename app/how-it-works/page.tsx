@@ -95,6 +95,10 @@ export default function HowItWorksPage() {
                   <p className="text-[11px] font-semibold text-teal-light uppercase tracking-[0.3em] mb-2">
                     Basic Listing
                   </p>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-sm text-pearl/40 line-through tabular-nums">{formatCurrency(PRICING.cityListing * 2)}</span>
+                    <span className="text-[10px] font-bold text-teal-light bg-teal/15 border border-teal/30 rounded px-1.5 py-0.5 uppercase tracking-wide">50% Off</span>
+                  </div>
                   <p className="race-head text-3xl font-light tabular-nums text-pearl">
                     {formatCurrency(PRICING.cityListing)}
                   </p>
@@ -104,10 +108,18 @@ export default function HowItWorksPage() {
                   <p className="text-[11px] font-semibold text-gold-light uppercase tracking-[0.3em] mb-2">
                     Featured Listing
                   </p>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-sm text-pearl/40 line-through tabular-nums">+{formatCurrency(PRICING.cityFeatured * 2)}</span>
+                    <span className="text-[10px] font-bold text-gold bg-gold/15 border border-gold/30 rounded px-1.5 py-0.5 uppercase tracking-wide">50% Off</span>
+                  </div>
                   <p className="race-head text-3xl font-light tabular-nums text-foil">
                     +{formatCurrency(PRICING.cityFeatured)}
                   </p>
-                  <p className="text-muted text-sm">per city</p>
+                  <p className="text-muted text-sm">first city</p>
+                  <div className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-gold/10 border border-gold/30 px-3 py-1">
+                    <span className="text-xs font-semibold text-gold-light">+{formatCurrency(PRICING.cityFeaturedAdditional)} each additional city</span>
+                    <span className="text-[10px] font-bold text-gold bg-gold/20 rounded-full px-1.5 py-0.5">50% OFF</span>
+                  </div>
                 </div>
               </div>
 
@@ -117,6 +129,7 @@ export default function HowItWorksPage() {
                     "Only 1 Featured Listing available per city",
                     "Annual term: 12 months, paid once",
                     "Featured listings receive priority placement",
+                    `Additional featured cities at ${formatCurrency(PRICING.cityFeaturedAdditional)} each (50% off)`,
                     "All listed practices receive a recognition award",
                   ].map((f) => (
                     <li key={f} className="flex items-center gap-2">
