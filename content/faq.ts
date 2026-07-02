@@ -35,7 +35,7 @@ export const faqItems: FaqItem[] = [
       "Businesses that apply before our August 2026 launch are eligible to receive 50% off all listings. This limited-time offer provides the same recognition, benefits, and visibility at a reduced pre-launch rate.",
   },
   {
-    question: "Do you host an awards dinner?",
+    question: "Is there an awards dinner?",
     answer:
       "The Awards & Recognition Dinner is an exclusive annual event celebrating the practices featured on TopRespiratoryTherapists.com. It brings together recognized practices, industry professionals, and invited guests to celebrate excellence in patient care. Each listing includes an invitation for your practice, with the event schedule and location announced in advance.",
   },
