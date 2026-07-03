@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Button from "./Button";
 
 const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1631563019676-dade0dbdb8fc?auto=format&fit=crop&w=1920&q=80";
+  "https://images.unsplash.com/photo-1758653500388-36b051468d09?auto=format&fit=crop&w=1920&q=80";
 
 const HEADLINE = ["Be", "the", "therapist", "they"];
 const ACCENT = "trust.";
